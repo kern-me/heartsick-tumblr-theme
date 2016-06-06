@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Basic Page Needs
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta charset="utf-8">
+<title>{Title}</title>
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">{block:Description}
+<meta name="description" content="{MetaDescription}" />{/block:Description}
+<meta name="author" content="">
+{block:Hidden}
+    <meta name="if:Sliding header" content="1">
+    <meta name="if:Show navigation" content="1">
+    <meta name="if:Endless scrolling" content="1">
+    <meta name="if:Syntax highlighting" content="0">
+    <!--<meta name="select:Layout" content="regular" title="Regular">-->
+    <!--<meta name="select:Layout" content="narrow" title="Narrow">-->
+    <!--<meta name="select:Layout" content="grid" title="Grid">-->
+    <meta name="if:Related Posts" content="1">
+    <meta name="text:Disqus shortname" content="">
+    <meta name="text:Google analytics ID" content="">
+{/block:Hidden}
+
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+<!-- Mobile Specific Metas
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- FONT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/9448237/heartsick-tumblr/normalize.css">
+<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/9448237/heartsick-tumblr/skeleton.css">
+<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/9448237/heartsick-tumblr/custom.css">
+  
+  <style>
+      .post-content blockquote {
+          font-size: 4rem;
+          line-height: 4.75rem;
+          font-family: 'Montserrat', sans-serif;
+      }
+      
+      .post-content blockquote:before, 
+      .post-content blockquote:after {
+      }
+      
+      .post-content blockquote:before {
+          content: "\201C";
+      }
+      .post-content blockquote:after {
+          content: "\201D";
+      }
+      cite.caption {
+          float:right;
+      }
+      .no-bullets {
+          list-style-type: none;
+      }
+      .inline {
+          display: inline-block;
+      }
+      .post-content h2 {
+          font-size: 3rem;
+          line-height: 3.5rem;
+      }
+      .post-content h2 a {
+          color: #333;
+      }
+      .type-link .link-name {
+          text-transform: uppercase;
+          font-family: 'Montserrat', sans-serif;
+      }
+      .chat-lines .label {
+          font-weight: bold;
+      }
+      .search-wrapper {
+          text-align: center;
+      }
+      .copyright {
+          color: #333;
+          text-align: center;
+      }
+      .nav--primary a,
+      .nav--secondary a {
+          color: #333;
+      }
+      .social-media-buttons {
+          text-align: center;
+      }
+  </style>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body data-urlencoded-name="{URLEncodedName}" class="{block:IndexPage}is-index-page{/block:IndexPage} {block:PermalinkPage}is-permalink-page{/block:PermalinkPage}{select:Layout}{block:IndexPage} index-page{/block:IndexPage}{block:PermalinkPage} permalink{/block:PermalinkPage}{block:LikesPage} likes-page{/block:LikesPage}{block:FollowingPage} following-page{/block:FollowingPage}{block:SearchPage} search-page{block:NoSearchResults} no-results{/block:NoSearchResults}{block:NoLikes} no-likes{/block:NoLikes}{block:NoFollowing} no-following{/block:NoFollowing}{/block:SearchPage}{block:HideHeaderImage} no-header-image{/block:HideHeaderImage}{block:NoStretchHeaderImage} contain-header-image{/block:NoStretchHeaderImage}{block:IfRelatedPosts} display-related-posts{/block:IfRelatedPosts}">
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <style>
+      .tumblr-follow-button {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 0.5rem 0.75rem;
+      }
+      .tumblr-follow-button a {
+          color: #333;
+      }
+      .addthis_horizontal_follow_toolbox p {
+          display: none;
+      }
+      .addthis_default_style .addthis_separator, .addthis_default_style .at4-icon, .addthis_default_style .at300b, .addthis_default_style .at300bo, .addthis_default_style .at300bs, .addthis_default_style .at300m {
+          float: none;
+      }
+  </style>
+  <!-- logo -->
+  <div class="container margin-top">
+    <div class="row">
+      <div class="logo">
+        <img src="https://dl.dropboxusercontent.com/u/9448237/heartsick-tumblr/heartsick-bordered-color.png">
+      </div>
+    </div>
+    <div class="row">
+      <ul class="nav nav--primary center">
+        <li class="accent"><a target="_blank" href="http://heartsickband.storenvy.com/products/16955346-heartsick-full-length-album">Buy Album</a></li>
+        <li><a target="_blank" href="http://heartsickband.storenvy.com/">Store</a></li>
+        <li><a href="mailto:sethsls78@gmail.com?subject=Hey, Seth and Mark. I have a question about Heartsick.&cc=brotherbeemer@gmail.com">Contact</a></li>
+        <li><a target="_blank" href="http://www.bandsintown.com/HeartsickU.S.">Tour</a></li>
+        <li><a target="_blank" href="https://www.youtube.com/channel/UCwpxoFJcVgwgeXDKPeGW-bw">Video</a></li>
+      </ul>
+        <!-- Social buttons -->
+        <div class="social-media-buttons">
+            <div class="addthis_horizontal_follow_toolbox"></div>
+        </div>
+    <hr>
+    <div class="row">
+      <div class="one-half column center callout">
+        <h3>"Heartsick" - Full Length Record</h3>
+        <h4>Available Now!</h4>
+        <a href="http://heartsickband.storenvy.com/products/16955346-heartsick-full-length-album">
+            <img src="https://dl.dropboxusercontent.com/u/9448237/heartsick-tumblr/Heartsick-Heatseekers-Album-Promo.png">
+        </a>
+        <ul class="nav nav--secondary center">
+          <li class="accent"><a href="https://www.amazon.com/gp/product/B0198LB6V8?ie=UTF8&keywords=Heartsick&qid=1449852903&ref_=sr_1_1&s=dmusic&sr=1-1-mp3-albums-bar-strip-0">Amazon</a></li>
+          <li class="accent"><a href="https://itunes.apple.com/us/artist/heartsick/id1065162989">iTunes</a></li>
+          <li class="accent"><a href="https://play.google.com/store/music/artist/Heartsick?id=A3c6ocmoermsi22b6tklxn2b2ty&hl=en">Google Play</a></li>
+        </ul>
+      </div>
+      <div class="one-half column center callout">
+        <h3>Merch bundles from $15</h3>
+        <h4>Shop Heartsick</h4>
+        <a href="http://heartsickband.storenvy.com">
+            <img src="https://dl.dropboxusercontent.com/u/9448237/heartsick-tumblr/heartsick-merch-promo.png">
+        </a>
+      </div>
+    </div><!--/row -->
+    <hr>
+    <div class="row center">
+      <h2>Coffin Chaser (Official Music Video)</h2>
+      <iframe width="662" height="372" src="https://www.youtube.com/embed/D-4BdkzVU2g" frameborder="0" allowfullscreen></iframe>
+      <a class="accent" href="https://www.youtube.com/channel/UCwpxoFJcVgwgeXDKPeGW-bw">More Videos</a>
+    </div>
+    <hr>
+    <div class="row">
+    <h2>Tour Dates</h2>
+        <script type='text/javascript' src='http://widget.bandsintown.com/javascripts/bit_widget.js'></script><a href="http://www.bandsintown.com/Heartsick%20U.S." class="bit-widget-initializer" data-artist="Heartsick U.S.">Heartsick U.S. Tour Dates</a>
+    </div>
+    <hr>
+
+    <!-- START TUMBLR STUFF -->
+    
+    <!-- Search results -->
+    {block:SearchPage}
+        <div class="search-page message">
+            {block:SearchResults}
+                <p class="search-result">{lang:Search results for SearchQuery 2}</p>
+            {/block:SearchResults}
+        
+            {block:NoSearchResults}
+                <p class="search-result">{lang:Sorry no results for SearchQuery 2}</p>
+            {/block:NoSearchResults}
+            <span class="divider"></span>
+        </div>
+    {/block:SearchPage}
+    
+    <!-- Tag page -->
+    {block:TagPage}
+        <div class="tag-page message">
+            <p class="tag-wrapper">{lang:Showing posts tagged Tag 2}</p>
+            <span class="divider"></span>
+        </div>
+    {/block:TagPage}
+
+    <!-- Posts -->
+    {block:Posts}
+        <article>
+            <!-- Text -->
+            {block:Text}
+                <div class="type-text post-content">
+                  {block:Title}
+                    <h2 class="title">
+                	    <a href="{Permalink}">{Title}</a>
+                    </h2>
+                  {/block:Title}
+                  {Body}
+                </div>
+            {/block:Text}
+            
+            <!-- Exif Data -->
+            <!--{block:Exif}-->
+            <!--    <ul class="exif no-bullets">-->
+            <!--        <li>{block:Camera}Camera: {Camera}{/block:Camera}</li>-->
+            <!--        <li>{block:Aperture}Aperture: {Aperture}{/block:Aperture}</li>-->
+            <!--        <li>{block:Exposure}Exposure: {Exposure}{/block:Exposure}</li>-->
+            <!--        <li>{block:FocalLength}Focal Length: {FocalLength}{/block:FocalLength}</li>-->
+            <!--    </ul>-->
+            <!--{/block:Exif}-->
+            
+            <!-- Photo -->
+            {block:Photo}
+                <figure class="type-photo post-content">
+                  {LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" />{LinkCloseTag}
+                
+                  {block:Caption}
+                      <figcaption class="caption">
+                    	{Caption}
+                      </figcaption>
+                  {/block:Caption}
+                </figure>
+            {/block:Photo}
+            
+            <!-- Photosets -->
+            {block:Photoset}
+                <figure class="type-photoset post-content">{Photoset}
+                  {block:Caption}
+                    <figcaption class="caption">{Caption}</figcaption>
+                  {/block:Caption}
+                </figure>
+            {/block:Photoset}
+            
+            <!-- Quote -->
+            {block:Quote}
+                <div class="type-quote post-content">
+                    <blockquote>{Quote}</blockquote>
+                    {block:Source}
+                        <cite class="caption">{Source}</cite>
+                    {/block:Source}
+                </div>
+            {/block:Quote}
+            
+            <!-- Link -->
+            {block:Link}
+                <div class="type-link post-content">
+                    <a {Target} href="{URL}" class="link-name">{Name}</a>
+                    {block:Description}
+                        <div class="caption">{Description}</div>
+                    {/block:Description}
+                </div>
+            {/block:Link}
+            
+            <!-- Chat -->
+            {block:Chat}
+            <div class="type-chat post-content">
+                <ul class="chat-lines no-bullets">
+                    {block:Lines}
+                        <li>
+            	            {block:Label}<span class="label">{Label}</span>{/block:Label} {Line}
+        	            </li>
+            	    {/block:Lines}
+                </ul>
+            </div>
+            {/block:Chat}
+            
+            <!-- Audio -->
+            {block:Audio}
+                <div class="type-audio post-content">
+                    {block:AudioEmbed}
+                        {AudioEmbed color="white"}
+                    {/block:AudioEmbed}
+                    {block:Caption}
+                        <div class="caption">
+                            {Caption}
+                        </div>
+                    {/block:Caption}
+                </div>
+            {/block:Audio}
+            
+            <!-- Video -->
+            {block:Video}
+                <div class="type-video post-content">
+                    {Video-700}
+                    {block:Caption}
+                        <div class="caption">{Caption}</div>
+                    {/block:Caption}
+                </div>
+            {/block:Video}
+            
+            
+            <!-- Answer -->
+            {block:Answer}
+                <div class="type-answer post-content">
+                    <div class="question">
+                        <p class="asker">
+                            <span class="user-name">{Asker}</span>{block:English} asked{/block:English}:
+                        </p>
+            
+                        <h2 class="title">{Question}</h2>
+                    </div>
+                    {block:Answerer}
+                        <div class="answer">
+                            <p class="answerer"><span class="user-name">{Answerer}</span>
+                            {block:English} answered{/block:English}:</p>
+                            
+                            <div class="caption">{Answer}</div>
+                        </div>
+                    {/block:Answerer}
+
+                    <div class="replies">{Replies}</div>
+                </div>
+            {/block:Answer}
+            
+            <!-- Date -->
+            {block:Date}
+                <footer class="contentinfo" role="contentinfo">
+                    <a href="{Permalink}" title="{ShortMonth} {DayOfMonth}{DayOfMonthSuffix} {Year}">
+                        {TimeAgo}
+                    </a>
+                
+                    {block:NoteCount}
+                        <a class="note-count" href="{Permalink}#notes">
+                            {NoteCountWithLabel}
+                        </a>
+                    {/block:NoteCount}
+                    
+                    {block:RebloggedFrom}
+                        <a class="reblog-link" href="{ReblogParentURL}">
+                            {ReblogParentName}
+                        </a>
+                    {/block:RebloggedFrom}
+                    
+                    {block:PermalinkPage}
+                        {block:HasTags}
+                            <div class="tag-container">
+                                <ul class="tags no-bullets">
+                                    {block:Tags}<li class="inline"><a href="{TagURL}">#{Tag}</a> </li>{/block:Tags}
+                                </ul>
+                            </div>
+                        {/block:HasTags}
+                        
+                        {block:PostNotes}
+                            <div class="post-notes">{PostNotes}</div>
+                        {/block:PostNotes}
+                    {/block:PermalinkPage}
+                </footer>
+                <div class="row">
+                    <div class="one column offset-by-five">
+                        {LikeButton}
+                    </div>
+                    
+                    <div class="one column">
+                        {Reblogbutton}
+                    </div>
+                </div>
+            {/block:Date}
+        </article>
+        <hr>
+    {/block:Posts}
+  </div><!-- /container -->
+  </div>
+  
+  <!-- Search field -->
+  
+  <div class="search-wrapper">
+    <form action="/search" method="get" id="search">
+        <label class="search-field-label">
+            <input type="text" class="search-field" name="q" id="q" placeholder="{lang:Search Blog}" value="{SearchQuery}" autocomplete="off">
+        </label>
+    </form>
+  </div>
+
+
+  <footer class="footer--main">
+    <div class="container">
+      <div class="row center sponsors">
+        <div class="three columns">
+        <a href="http://www.soultonecymbals.com/artist/nico-killips">
+          <img src="https://dl.dropboxusercontent.com/u/9448237/sponsor-soultone.png">
+        </a>
+        </div>
+        <div class="three columns">
+            <a href="http://coldcockwhiskey.com/">
+                <img src="https://dl.dropboxusercontent.com/u/9448237/sponsor-coldcock.png">
+            </a>
+        </div>
+        <div class="three columns">
+            <a href="http://intunegp.com/">
+                <img src="https://dl.dropboxusercontent.com/u/9448237/sponsor-intune.png">
+            </a>
+        </div>
+        <div class="three columns">
+            <a href="https://www.facebook.com/aandsdrums/">
+                <img src="https://dl.dropboxusercontent.com/u/9448237/sponsor-a-and-s.png">
+            </a>
+        </div>
+      </div>
+      <div class="row copyright">
+          <span>&copy; 2015-2016 Heartsick</span>
+      </div>
+    </div>
+  </footer>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- Addthis Widget -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-575323726eeb642a"></script>
+</body>
+</html>
