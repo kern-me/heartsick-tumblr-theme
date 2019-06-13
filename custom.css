@@ -1,0 +1,249 @@
+body {
+  background-image: url("https://dl.dropboxusercontent.com/u/9448237/heartsick-tumblr-main-bg.jpg");
+  background-repeat: repeat;
+  background-size: 50% auto;
+  background-position: center;
+}
+a {
+  text-decoration: none;
+  color: #CD0000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+h1,h2 {
+  letter-spacing: 3px;
+}
+
+img, iframe {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.margin-top {
+  margin-top: 3rem;
+}
+
+.brand-color--accent {
+  color: #CD0000;
+}
+.brand-color_primary {
+  color: #333;
+}
+
+/* Main navigation */
+.nav {
+  margin-top: 3rem;
+}
+.nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+.nav--primary li {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+.nav--secondary li {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.4rem;
+  margin-right: 1rem;
+  text-transform: uppercase;
+}
+
+/* Album Promo section */
+.accent {
+  border: 2px solid #333;
+}
+
+a.accent {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem;
+  color: #333;
+}
+
+/* Call out rules */
+.callout h1,
+.callout h2 {
+  font-size: 3em;
+}
+
+.callout h3 {
+  font-size: 1.25em;
+  margin-bottom: 0.1em;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+}
+
+.callout h4 {
+  font-size: 2em;
+  letter-spacing: 0.3rem;
+}
+
+/* Posts */
+blockquote {
+
+}
+
+.post-content blockquote {
+  font-size: 4rem;
+  line-height: 4.75rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.post-content blockquote:before, 
+.post-content blockquote:after {
+}
+
+.post-content blockquote:before {
+  content: "\201C";
+}
+.post-content blockquote:after {
+  content: "\201D";
+}
+cite.caption {
+  float:right;
+}
+.no-bullets {
+  list-style-type: none;
+}
+.inline {
+  display: inline-block;
+}
+.post-content h2 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+.post-content h2 a {
+  color: #333;
+}
+.type-link .link-name {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+.cta-button {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;  
+}
+.chat-lines .label {
+  font-weight: bold;
+}
+.search-wrapper {
+  text-align: center;
+}
+.copyright {
+  color: #333;
+  text-align: center;
+}
+.nav--primary a,
+.nav--secondary a {
+  color: #333;
+}
+.social-media-buttons {
+  padding: 10px 0 40px 0;
+  text-align: center;
+}
+
+.tumblr-follow-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem 0.75rem;
+}
+.tumblr-follow-button a {
+  color: #333;
+}
+.tag {
+  margin-right: 10px;
+}
+.tumblr_video_container {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.photoset .photoset_row .photoset_photo img {
+  max-width: 50% !important;
+  height: auto;
+}
+
+.container--social-buttons ul,
+.container--social-buttons li {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.container--social-buttons li {
+	list-style-type: none;
+  display: inline-block;
+}
+
+.list--social-buttons li a {
+  font-size: 0;
+}
+.container--social-buttons img {
+  display: inline-block;
+}
+
+
+
+.facebook {
+  background: url('https://dl.dropboxusercontent.com/u/9448237/heartsick-tumblr/Facebook.png');
+}
+.instagram {
+  background: url('https://dl.dropboxusercontent.com/u/9448237/heartsick-tumblr/Instagram.png');
+}
+
+.spotify {
+  background: url('https://dl.dropboxusercontent.com/u/9448237/heartsick-tumblr/spotify.png');
+}
+
+.youtube {
+  background: url('https://dl.dropboxusercontent.com/u/9448237/heartsick-tumblr/Youtube.png');
+}
+
+.twitter {
+  background: url('https://dl.dropboxusercontent.com/u/9448237/heartsick-tumblr/Twitter.png');
+}
+
+.facebook,
+.instagram,
+.spotify,
+.youtube,
+.twitter {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  display: inline-block;
+  height: 64px;
+  width: 66px;
+}
+
+
+
+/* Footer */
+
+.footer--main {
+  background-color: #1b1b1b;
+  padding: 3rem 0;
+  border-top: 3px solid #464646;
+}
+
+.sponsors img {
+  width: auto;
+  height: 60px;
+  padding: 0.5em;
+}
+
+.copyright {
+  font-size: 1rem;
+}
